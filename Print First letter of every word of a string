@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+
+
+class Solution{
+public:	
+	
+	string firstAlphabet(string S)
+	{
+	    string alpha="";
+	    alpha=alpha+S[0];
+	    for(int i=0;S[i]!='\0';i++)
+	    if(isspace(S[i]))
+	    alpha=alpha+S[i+1];
+	    return alpha;
+	    
+	}
+};
+
+int main() 
+{
+   	
+
+   	ios_base::sync_with_stdio(0);
+    cin.tie(NULL);
+    cout.tie(NULL);
+   
+   	int t;
+   	string tc;
+   	getline(cin, tc);
+   	t = stoi(tc);
+   	while(t--)
+   	{
+   		string s;
+   		getline(cin, s);
+
+   	
+        Solution ob;
+   		cout << ob.firstAlphabet(s) << "\n";
+   	}
+
+    return 0;
+} 
+  
