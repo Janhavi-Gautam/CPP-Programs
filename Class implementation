@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+class Car
+{
+public:
+    string color;
+    float price;
+    int seats;
+};
+
+int main()
+{
+    Car car1;
+    car1.color = "White";
+    car1.price = 7000000;
+    car1.seats = 4;
+    
+    Car car2;
+    car2.color = "Black";
+    car2.price = 300000;
+    car2.seats = 2;
+    
+    cout<<car1.price<<endl;
+    cout<<car1.color<<endl;
+    cout<<car2.seats<<endl;
+    cout<<car2.color<<endl;
+    
+    
+    return 0;
+}
